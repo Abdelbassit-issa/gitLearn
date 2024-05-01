@@ -19,7 +19,7 @@ public class Main {
         System.out.println("File already exists.");  
       }  
     } catch (IOException e) {
-      System.out.println("An error occurred.");
+
       e.printStackTrace();  
     }  
 System.out.println(myObj.exists());
