@@ -1,5 +1,6 @@
 import g.GuessingGame;
 import java.io.File;
+import java.io.IOException;
 
 public class Main {
 
@@ -9,9 +10,19 @@ public class Main {
     // }
 
     public static void main(String[] args) {
-File file = new File("test.csv");
-
-System.out.println(file.exists());
+ File myObj = new File("../test.csv");
+ try {  
+     
+      if (myObj.createNewFile()) {  
+        System.out.println("File created: " + myObj.getName());  
+      } else {  
+        System.out.println("File already exists.");  
+      }  
+    } catch (IOException e) {
+      System.out.println("An error occurred.");
+      e.printStackTrace();  
+    }  
+System.out.println(myObj.exists());
         // B b = (s) -> s + "!";
         // stingFormat("Hello", b);
         // GuessingGame g = new GuessingGame();
