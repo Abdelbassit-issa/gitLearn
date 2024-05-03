@@ -25,10 +25,10 @@ public class Main {
 
     try {
 
-      final FileWriter myWriter = new FileWriter("../detailed-outline.for.a.horror.store.txt");
+      final FileWriter myWriter = new FileWriter("/detailed-outline.for.a.horror.store.txt");
       myWriter.write(
           """
-                            Setting:  Cur rickety antique shop called "The Whispering Attic" on the outskirts of a forgotten town. Dust motes dance in the faint sunlight filtering through grime-coated windows. An unsettling silence hangs heavy in the air.
+              Setting:  Cur rickety antique shop called "The Whispering Attic" on the outskirts of a forgotten town. Dust motes dance in the faint sunlight filtering through grime-coated windows. An unsettling silence hangs heavy in the air.
 
               Main Character:  Elena, a young woman drawn to the shop by an irresistible pull, despite an aura of unease. She's searching for a specific antique (you choose the object).
 
