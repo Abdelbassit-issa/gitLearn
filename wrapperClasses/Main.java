@@ -1,39 +1,31 @@
 import g.GuessingGame;
 import java.io.FileWriter;
+import java.io.File;
 import java.io.IOException;
 
 public class Main {
 
-<<<<<<< HEAD
-    public interface B {
-        String run(String r);
+  public interface B {
+    String run(String r);
 
-    }
-=======
-  // public interface B {
-  // String run(String r);
-
-  // }
->>>>>>> new-wrappewr-classes
+  }
 
   public static void main(final String[] args) {
+    File file = new File("../detailed-outline.for.a.horror.store.txt");
+    System.out.println(file.exists());
+    B b = (s) -> s + "!";
+    stingFormat("Hello", b);
+    // GuessingGame g = new GuessingGame();
+    // g.playGame();
+  }
 
-<<<<<<< HEAD
-System.out.println(file.exists());
-        B b = (s) -> s + "!";
-        stingFormat("Hello", b);
-        // GuessingGame g = new GuessingGame();
-        // g.playGame();
-    }
+  public static void stingFormat(String val, B b) {
+    String result = b.run(val);
+    System.out.println(result);
 
-    public static void stingFormat(String val, B b) {
-        String result = b.run(val);
-        System.out.println(result);
-    }
-=======
     try {
 
-      final FileWriter myWriter = new FileWriter("../detailed outline.for.a.horror.store.txt.txt");
+      final FileWriter myWriter = new FileWriter("../detailed-outline.for.a.horror.store.txt");
       myWriter.write(
           """
                             Setting:  Cur rickety antique shop called "The Whispering Attic" on the outskirts of a forgotten town. Dust motes dance in the faint sunlight filtering through grime-coated windows. An unsettling silence hangs heavy in the air.
@@ -91,5 +83,5 @@ System.out.println(file.exists());
   // String result = b.run(val);
   // System.out.println(result);
   // }
->>>>>>> new-wrappewr-classes
+
 }
